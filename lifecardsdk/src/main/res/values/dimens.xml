@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lifecardsdk_dp_0">0dp</dimen>
+    <dimen name="lifecardsdk_dp_0_7">0.7dp</dimen>
+    <dimen name="lifecardsdk_dp_1">@dimen/_1_sdp</dimen>
+    <dimen name="lifecardsdk_dp_2">@dimen/_2_sdp</dimen>
+    <dimen name="lifecardsdk_dp_3">@dimen/_2_sdp</dimen>
+    <dimen name="lifecardsdk_dp_4">@dimen/_3_sdp</dimen>
+    <dimen name="lifecardsdk_dp_5">@dimen/_4_sdp</dimen>
+    <dimen name="lifecardsdk_dp_6">@dimen/_5_sdp</dimen>
+    <dimen name="lifecardsdk_dp_7">@dimen/_5_sdp</dimen>
+    <dimen name="lifecardsdk_minus_dp_8">@dimen/_minus5_sdp</dimen>
+    <dimen name="lifecardsdk_dp_8">@dimen/_6_sdp</dimen>
+    <dimen name="lifecardsdk_dp_10">@dimen/_8_sdp</dimen>
+    <dimen name="lifecardsdk_dp_11">@dimen/_8_sdp</dimen>
+    <dimen name="lifecardsdk_dp_12">@dimen/_9_sdp</dimen>
+    <dimen name="lifecardsdk_dp_13">@dimen/_10_sdp</dimen>
+    <dimen name="lifecardsdk_dp_14">@dimen/_11_sdp</dimen>
+    <dimen name="lifecardsdk_dp_15">@dimen/_11_sdp</dimen>
+    <dimen name="lifecardsdk_dp_16">@dimen/_12_sdp</dimen>
+    <dimen name="lifecardsdk_dp_18">@dimen/_14_sdp</dimen>
+    <dimen name="lifecardsdk_dp_20">@dimen/_15_sdp</dimen>
+    <dimen name="lifecardsdk_dp_24">@dimen/_18_sdp</dimen>
+    <dimen name="lifecardsdk_dp_26">@dimen/_19_sdp</dimen>
+    <dimen name="lifecardsdk_dp_28">@dimen/_21_sdp</dimen>
+    <dimen name="lifecardsdk_dp_30">@dimen/_23_sdp</dimen>
+    <dimen name="lifecardsdk_dp_32">@dimen/_24_sdp</dimen>
+    <dimen name="lifecardsdk_dp_36">@dimen/_27_sdp</dimen>
+    <dimen name="lifecardsdk_dp_40">@dimen/_30_sdp</dimen>
+    <dimen name="lifecardsdk_dp_42">@dimen/_32_sdp</dimen>
+    <dimen name="lifecardsdk_dp_51">@dimen/_38_sdp</dimen>
+    <dimen name="lifecardsdk_dp_56">@dimen/_42_sdp</dimen>
+    <dimen name="lifecardsdk_dp_48">@dimen/_36_sdp</dimen>
+    <dimen name="lifecardsdk_dp_55">@dimen/_42_sdp</dimen>
+    <dimen name="lifecardsdk_dp_60">@dimen/_45_sdp</dimen>
+    <dimen name="lifecardsdk_dp_70">@dimen/_53_sdp</dimen>
+    <dimen name="lifecardsdk_dp_77">@dimen/_58_sdp</dimen>
+    <dimen name="lifecardsdk_dp_80">@dimen/_60_sdp</dimen>
+    <dimen name="lifecardsdk_dp_85">@dimen/_64_sdp</dimen>
+    <dimen name="lifecardsdk_dp_100">@dimen/_75_sdp</dimen>
+    <dimen name="lifecardsdk_dp_110">@dimen/_83_sdp</dimen>
+    <dimen name="lifecardsdk_dp_120">@dimen/_90_sdp</dimen>
+    <dimen name="lifecardsdk_dp_145">@dimen/_109_sdp</dimen>
+    <dimen name="lifecardsdk_dp_150">@dimen/_113_sdp</dimen>
+    <dimen name="lifecardsdk_dp_170">@dimen/_128_sdp</dimen>
+    <dimen name="lifecardsdk_dp_190">@dimen/_143_sdp</dimen>
+    <dimen name="lifecardsdk_dp_195">@dimen/_150_sdp</dimen>
+    <dimen name="lifecardsdk_dp_198">@dimen/_154_sdp</dimen>
+    <dimen name="lifecardsdk_dp_220">@dimen/_165_sdp</dimen>
+    <dimen name="lifecardsdk_dp_225">@dimen/_170_sdp</dimen>
+    <dimen name="lifecardsdk_dp_230">@dimen/_173_sdp</dimen>
+    <dimen name="lifecardsdk_dp_240">@dimen/_178_sdp</dimen>
+    <dimen name="lifecardsdk_dp_250">@dimen/_188_sdp</dimen>
+    <dimen name="lifecardsdk_dp_258">@dimen/_193_sdp</dimen>
+    <dimen name="lifecardsdk_dp_300">@dimen/_225_sdp</dimen>
+    <dimen name="lifecardsdk_dp_400">@dimen/_300_sdp</dimen>
+
+    <dimen name="lifecardsdk_sp_10">@dimen/_7_sdp</dimen>
+    <dimen name="lifecardsdk_sp_11">@dimen/_8_sdp</dimen>
+    <dimen name="lifecardsdk_sp_12">@dimen/_9_sdp</dimen>
+    <dimen name="lifecardsdk_sp_13">@dimen/_10_sdp</dimen>
+    <dimen name="lifecardsdk_sp_14">@dimen/_11_sdp</dimen>
+    <dimen name="lifecardsdk_sp_15">@dimen/_12_sdp</dimen>
+    <dimen name="lifecardsdk_sp_16">@dimen/_13_sdp</dimen>
+    <dimen name="lifecardsdk_sp_18">@dimen/_14_sdp</dimen>
+    <dimen name="lifecardsdk_sp_19">@dimen/_15_sdp</dimen>
+    <dimen name="lifecardsdk_sp_20">@dimen/_16_sdp</dimen>
+    <dimen name="lifecardsdk_sp_22">@dimen/_18_sdp</dimen>
+    <dimen name="lifecardsdk_sp_24">@dimen/_19_sdp</dimen>
+    <dimen name="lifecardsdk_sp_28">@dimen/_21_sdp</dimen>
+    <dimen name="lifecardsdk_sp_32">@dimen/_24_sdp</dimen>
+    <!--labels & content-->
+
+    <dimen name="lifecardsdk_dp_175">@dimen/_175_sdp</dimen>
+    <dimen name="lifecardsdk_dp_50">@dimen/_50_sdp</dimen>
+    <dimen name="lifecardsdk_dp_45">@dimen/_45_sdp</dimen>
+    <dimen name="lifecardsdk_dp_25">@dimen/_25_sdp</dimen>
+    <dimen name="lifecardsdk_dp_200">@dimen/_200_sdp</dimen>
+
+
+    <dimen name="lifecardsdk_default_toolbar_height">@dimen/lifecardsdk_dp_51</dimen>
+    <!--toolbar-->
+    <dimen name="lifecardsdk_card_height">@dimen/_185_sdp</dimen>
+    <dimen name="lifecardsdk_margin_top_card">@dimen/_144_sdp</dimen>
+    <!--bottom nav-->
+    <dimen name="lifecardsdk_bottom_navigation_icon">@dimen/lifecardsdk_dp_28</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_height">@dimen/lifecardsdk_dp_56</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_small_inactive_max_width">1000dp</dimen>
+
+    <dimen name="lifecardsdk_bottom_navigation_elevation">8dp</dimen>
+
+    <dimen name="lifecardsdk_bottom_navigation_min_width">104dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_max_width">168dp</dimen>
+
+    <dimen name="lifecardsdk_bottom_navigation_margin_top_active">6dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_margin_top_inactive">8dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_margin_bottom">7dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_padding_left">12dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_padding_right">12dp</dimen>
+
+    <dimen name="lifecardsdk_bottom_navigation_text_size_active">14sp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_text_size_inactive">12sp</dimen>
+
+    <dimen name="lifecardsdk_bottom_navigation_text_size_forced_active">11sp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_text_size_forced_inactive">10sp</dimen>
+
+    <!-- bottom nav small -->
+    <dimen name="lifecardsdk_bottom_navigation_small_active_min_width">96dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_small_active_max_width">168dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_small_inactive_min_width">64dp</dimen>
+
+    <dimen name="lifecardsdk_bottom_navigation_small_margin_top_active">6dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_small_margin_top">16dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_small_margin_bottom">16dp</dimen>
+
+    <dimen name="lifecardsdk_bottom_navigation_small_selected_width_difference">10dp</dimen>
+
+    <!--bottom nav notifications -->
+    <dimen name="lifecardsdk_bottom_navigation_notification_width">16dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_height">16dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_radius">8dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_elevation">1dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_padding">3dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_margin_top_classic">4dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_margin_left">16dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_margin_left_active">16dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_margin_top">14dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_margin_top_active">3dp</dimen>
+    <dimen name="lifecardsdk_bottom_navigation_notification_text_size">9sp</dimen>
+
+
+    <!--?attr/actionBarSize-->
+</resources>

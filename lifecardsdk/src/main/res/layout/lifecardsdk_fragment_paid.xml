@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdonClick_Till_validated"
+                style="@style/LifeCardSDK_RoundMenuItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/lifecardsdk_dp_8"
+                android:gravity="center"
+                android:text="@string/lifecardsdk_Still_validated" />
+
+            <RadioButton
+                android:id="@+id/rdonClick_Expir"
+                style="@style/LifeCardSDK_RoundMenuItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/lifecardsdk_dp_8"
+                android:gravity="center"
+                android:text="@string/lifecardsdk_Expire" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvExpireCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvTill_validated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llNoCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/lifecardsdk_screen_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/lifecardsdk_dp_80"
+                android:layout_height="@dimen/lifecardsdk_dp_80"
+                android:layout_gravity="center"
+                android:src="@mipmap/lifecardsdk_icon_iconmuathe" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lifecardsdk_dp_30"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+            android:layout_marginRight="@dimen/lifecardsdk_dp_30"
+            android:gravity="center"
+            android:text="Mua thẻ trả trước, siêu tiết kiệm !" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lifecardsdk_dp_30"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+            android:layout_marginRight="@dimen/lifecardsdk_dp_30"
+            android:gravity="center"
+            android:text="Tiết kiệm tiền khi sử dụng dịch vụ ăn uống, mua sắm....
+Bạn chưa có Thẻ trả trước nào, hãy nhanh tay
+mua ngay hôm nay !" />
+
+        <Button
+            android:id="@+id/btnMyCardBuyCard"
+            style="@style/LifeCardSDK_SquareMenuItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+            android:background="@color/lifecardsdk_orange"
+            android:padding="@dimen/lifecardsdk_dp_10"
+            android:text="Mua thẻ trả trước ngay"
+            android:textColor="@color/lifecardsdk_white" />
+
+    </LinearLayout>
+
+</LinearLayout>

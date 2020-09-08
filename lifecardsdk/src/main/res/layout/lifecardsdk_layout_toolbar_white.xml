@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_51_sdp"
+    android:layout_marginBottom="@dimen/lifecardsdk_dp_1"
+    android:elevation="@dimen/lifecardsdk_dp_4">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/lifecardsdk_dp_42"
+        android:layout_height="@dimen/lifecardsdk_dp_42"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lifecardsdk_ic_back_white"
+        android:tint="@color/lifecardsdk_white" />
+
+    <TextView
+        android:id="@+id/tvTitleToolbar"
+        style="@style/LifeCardSDK_ScreenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/lifecardsdk_white" />
+</RelativeLayout>

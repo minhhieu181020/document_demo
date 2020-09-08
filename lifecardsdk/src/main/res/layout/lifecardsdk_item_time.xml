@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lifecardsdk_white"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="@dimen/lifecardsdk_dp_2"
+    android:paddingBottom="@dimen/lifecardsdk_dp_2">
+
+    <TextView
+        android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+        android:id="@+id/tvDay"
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="@dimen/lifecardsdk_dp_60"
+        android:layout_height="wrap_content"
+        android:text="Thứ 2" />
+
+    <TextView
+
+        android:id="@+id/tvHour"
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="@dimen/lifecardsdk_dp_100"
+        android:layout_height="wrap_content"
+        android:text="8:30 - 22:00" />
+</LinearLayout>

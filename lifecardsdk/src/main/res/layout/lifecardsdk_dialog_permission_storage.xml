@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/lifecardsdk_bg_dialog_permission"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:textSize="@dimen/lifecardsdk_dp_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_24"
+        android:gravity="center"
+        android:text="Thông báo" />
+
+    <TextView
+        android:paddingLeft="@dimen/lifecardsdk_dp_8"
+        android:paddingRight="@dimen/lifecardsdk_dp_8"
+        style="@style/LifeCardSDK_HeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_24"
+        android:gravity="center"
+        android:text="Bạn cần cho phép ứng dụng được cấp
+quyền truy cập ảnh" />
+
+    <include layout="@layout/lifecardsdk_border_vertical_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvClose"
+            android:textSize="@dimen/lifecardsdk_sp_16"
+            android:textColor="@color/lifecardsdk_black_effective"
+            style="@style/LifeCardSDK_SquareMenuItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/lifecardsdk_dp_12"
+            android:text="Đóng" />
+
+        <include layout="@layout/lifecardsdk_border_horizontal_gray" />
+
+        <TextView
+            android:id="@+id/tvAllow"
+            style="@style/LifeCardSDK_SquareMenuItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/lifecardsdk_dp_12"
+            android:text="Cho phép"
+            android:textSize="@dimen/lifecardsdk_sp_16"
+            android:textColor="@color/lifecardsdk_orange" />
+    </LinearLayout>
+</LinearLayout>

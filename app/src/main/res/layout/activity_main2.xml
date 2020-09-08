@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
+    style="@style/LifeCardSDK_SquareMenuItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+    android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/lifecardsdk_dp_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            style="@style/LifeCardSDK_SquareMenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/lifecardsdk_dp_8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lifecardsdk_card_height"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <com.lpb.lifecardsdk.widget.autofilltextview.AutofitTextView
+                    android:id="@+id/tvNumberCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/inter_light_beta"
+                    android:maxLines="1"
+                    autofit:ignore="RtlCompat" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/LifeCardSDK_SquareMenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_24"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/lifecardsdk_dp_8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lifecardsdk_card_height"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <com.lpb.lifecardsdk.widget.autofilltextview.AutofitTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/inter_light_beta"
+                    android:gravity="bottom|left"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/lifecardsdk_dp_24"
+                    android:paddingRight="@dimen/lifecardsdk_dp_24"
+                    android:paddingBottom="@dimen/lifecardsdk_dp_12"
+                    android:text="2100 0000 0000 123"
+                    android:textColor="@color/lifecardsdk_black"
+                    android:textSize="@dimen/lifecardsdk_sp_32"
+                    autofit:ignore="RtlCompat"
+                    autofit:minTextSize="@dimen/lifecardsdk_sp_16" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@mipmap/lifecardsdk_buy_card"
+        android:title="@string/lifecardsdk_home_bottom_nav_buy_card" />
+    <item
+
+        android:icon="@mipmap/lifecardsdk_my_card"
+        android:title="@string/lifecardsdk_home_bottom_nav_my_card" />
+    <item
+
+        android:icon="@mipmap/lifecardsdk_qr_code_used"
+        android:title="@string/lifecardsdk_home_bottom_nav_my_code" />
+    <item
+
+        android:icon="@mipmap/lifecardsdk_scan_qr"
+        android:title="@string/lifecardsdk_home_bottom_nav_scan_qr" />
+
+
+
+    <item
+        android:icon="@drawable/lifecardsdk_ic_baseline_settings_24"
+        android:title="@string/lifecardsdk_common_settings" />
+</menu>

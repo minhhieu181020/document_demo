@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlTransacstiuonDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lifecardsdk_default_toolbar_height"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_1"
+        android:background="@color/lifecardsdk_white"
+        android:elevation="@dimen/lifecardsdk_dp_4">
+
+        <TextView
+            android:id="@+id/tvTitleToolbar"
+            style="@style/LifeCardSDK_ScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llbtn"
+        android:layout_below="@+id/rlToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--Thông tin giao dịch-->
+            <TextView
+                android:id="@+id/tvtracstioninfomation"
+                style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                android:text="@string/lifecardsdk_transaction_infomation"
+                android:textColor="@color/lifecardsdk_black" />
+
+            <LinearLayout
+                android:id="@+id/lltransactioninfomation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/lifecardsdk_dp_8"
+                android:background="@drawable/lifecardsdk_bg_white_radius"
+                android:elevation="@dimen/lifecardsdk_dp_2"
+                android:orientation="vertical"
+                android:padding="@dimen/lifecardsdk_dp_8">
+
+                <!--        &lt;!&ndash;Thông tin giao dịch&ndash;&gt;-->
+                <!--        <TextView-->
+                <!--            style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:text="@string/lifecardsdk_transaction_infomation" />-->
+
+                <!--Chi nhánh-->
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lifecardsdk_branch"
+                    android:textColor="@color/grey_font" />
+                <!--Name Chi nhánh-->
+                <TextView
+                    android:id="@+id/tvBranch"
+                    style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/lifecardsdk_black"
+                    tools:text="B - TECK \n27 Trần Duy Hưng, Phường Trung Hòa, Quận Thanh Xuân, Hà Nội" />
+
+                <!--Nhân viên thanh toán-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal">
+                    <!--        NV thanh toán-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_Payment_staff"
+                        android:textColor="@color/grey_font" />
+                    <!--     Name   NV-->
+                    <TextView
+                        android:id="@+id/tvStaff"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/lifecardsdk_black"
+                        tools:text="acbdefghijklmnopqrstuvwxyz" />
+                </LinearLayout>
+                <!--Mã thanh toán-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal"
+                    android:textColor="@color/grey_font">
+                    <!--TV Mã thanh toán-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_Payment_code"
+                        android:textColor="@color/grey_font" />
+                    <!--Mã thanh toán-->
+                    <TextView
+                        android:id="@+id/tvTransCode"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/lifecardsdk_black"
+                        tools:text="1234567901234567890" />
+                </LinearLayout>
+                <!--VAT (%)-->
+                <LinearLayout
+                    android:id="@+id/llvat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <!--TV VAT (%)-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_VAT"
+                        android:textColor="@color/grey_font" />
+                    <!--VAT (%)-->
+                    <TextView
+                        android:id="@+id/tvVatDisplay"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/lifecardsdk_black"
+                        tools:text="0989097962" />
+                </LinearLayout>
+                <!--Họ tên KH-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal">
+                    <!--Họ tên KH-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_fullname"
+                        android:textColor="@color/grey_font" />
+                    <!--Họ tên KH-->
+                    <TextView
+                        android:id="@+id/tvCustomerName"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/lifecardsdk_black"
+                        tools:text="Nguyễn Văn A B C D E F G H I J K L M N" />
+                </LinearLayout>
+                <!--SDT KH-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal">
+                    <!--TV VAT (%)-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_phone_KH"
+                        android:textColor="@color/grey_font" />
+                    <!--VAT (%)-->
+                    <TextView
+                        android:id="@+id/tvMobilePhone"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/lifecardsdk_black"
+                        tools:text="0989097962" />
+                </LinearLayout>
+                <!--Mã hóa đơn-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <!--TV Mã hóa đơn-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_Bill_code"
+                        android:textColor="@color/grey_font" />
+                    <!--Mã hóa đơn-->
+                    <TextView
+                        android:id="@+id/tvBillCode"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/lifecardsdk_black"
+                        tools:text="01234696789973221549464684968" />
+                </LinearLayout>
+                <!--Ngày thanh toán-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <!--TV Ngày thanh toán-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_Payment_date"
+                        android:textColor="@color/grey_font" />
+                    <!--Ngày thanh toán-->
+                    <TextView
+                        android:id="@+id/tvTransTime"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/lifecardsdk_black"
+                        tools:text="01/01/2020 10:00:00" />
+                </LinearLayout>
+                <!--Trạng thái-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <!--TV Trạng thái-->
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@string/lifecardsdk_card_status"
+                        android:textColor="@color/grey_font" />
+                    <!--Trạng thái-->
+                    <TextView
+                        android:id="@+id/tvTransStatus"
+                        style="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        tools:text="Thành công" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Thông tin giao dịch-->
+            <LinearLayout
+                android:id="@+id/llListtransaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+                    android:text="@string/lifecardsdk_info_service" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcListCardService"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/lifecardsdk_item_transaction_times"
+                tools:itemCount="1"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tvServiceInformation"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+                android:background="@color/lifecardsdk_screen_background" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/llbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lifecardsdk_screen_background"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCansel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/lifecardsdk_dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_radius_red"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/lifecardsdk_orange" />
+
+        <Button
+            android:id="@+id/btnPayMent"
+            style="@style/LifeCardSDK_SquareMenuItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/lifecardsdk_dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_radius_color_orange"
+            android:text="@string/lifecardsdk_payment"
+            android:textAllCaps="false"
+            android:textColor="@color/lifecardsdk_white" />
+    </LinearLayout>
+
+</RelativeLayout>

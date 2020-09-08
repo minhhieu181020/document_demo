@@ -1,0 +1,65 @@
+<RelativeLayout
+    android:visibility="gone"
+    android:id="@+id/rlOpenCamera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:background="@color/lifecardsdk_white"
+        android:layout_height="@dimen/lifecardsdk_dp_51"
+        android:elevation="@dimen/lifecardsdk_dp_4"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_1">
+
+        <ImageView
+            android:id="@+id/imgBack2"
+            style="@style/LifeCardSDK_IconToolbar"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lifecardsdk__ic_back_black" />
+
+        <TextView
+            android:text="@string/lifecardsdk_Scan_the_code"
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/lifecardsdk_dp_18" />
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingLeft="@dimen/lifecardsdk_dp_36"
+        android:paddingRight="@dimen/lifecardsdk_dp_36"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/lifecardsdk_dp_120"
+            android:layout_height="@dimen/lifecardsdk_dp_120"
+            android:src="@mipmap/lifecardsdk_icon_iconmayanh" />
+
+        <TextView
+
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_grant_camera_deny"
+            android:textSize="@dimen/lifecardsdk_sp_20" />
+
+
+        <Button
+            android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+            android:id="@+id/permessioncamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lifecardsdk_bg_rounded_orange1"
+            android:padding="@dimen/lifecardsdk_dp_10"
+            android:text="@string/lifecardsdk_settings"
+            android:textColor="@color/lifecardsdk_white"
+            android:textSize="@dimen/lifecardsdk_dp_16" />
+    </LinearLayout>
+
+</RelativeLayout>

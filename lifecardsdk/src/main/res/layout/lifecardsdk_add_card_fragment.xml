@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/lifecardsdk_dp_20"
+    android:background="@color/lifecardsdk_screen_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Số thẻ"
+        android:textSize="@dimen/lifecardsdk_dp_13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSearch"
+            style="@style/LifeCardSDK_EditText.Drawable"
+            tools:text="1234"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/lifecardsdk_dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_edt_search"
+            android:elevation="@dimen/lifecardsdk_dp_4"
+            android:gravity="center"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/lifecardsdk_dp_13" />
+
+        <EditText
+            android:id="@+id/edtSearch1"
+            style="@style/LifeCardSDK_EditText.Drawable"
+            tools:text="5678"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/lifecardsdk_dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_edt_search"
+            android:elevation="@dimen/lifecardsdk_dp_4"
+            android:gravity="center"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/lifecardsdk_dp_13" />
+
+        <EditText
+            android:id="@+id/edtSearch2"
+            style="@style/LifeCardSDK_EditText.Drawable"
+            tools:text="9012"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/lifecardsdk_dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_edt_search"
+            android:elevation="@dimen/lifecardsdk_dp_4"
+            android:gravity="center"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/lifecardsdk_dp_13" />
+
+        <EditText
+            android:id="@+id/edtSearch3"
+            style="@style/LifeCardSDK_EditText.Drawable"
+            tools:text="3456"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/lifecardsdk_dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_edt_search"
+            android:elevation="@dimen/lifecardsdk_dp_4"
+            android:gravity="center"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/lifecardsdk_dp_13" />
+
+        <EditText
+            android:id="@+id/edtSearch4"
+            style="@style/LifeCardSDK_EditText.Drawable"
+            tools:text="789"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/lifecardsdk_dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_edt_search"
+            android:elevation="@dimen/lifecardsdk_dp_4"
+            android:gravity="center"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/lifecardsdk_dp_13" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSent"
+        style="@style/LifeCardSDK_RoundMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+        android:background="@drawable/lifecardsdk_bg_rounded_orange1"
+        android:text="Thêm thẻ"
+        android:textColor="@color/lifecardsdk_white" />
+</LinearLayout>

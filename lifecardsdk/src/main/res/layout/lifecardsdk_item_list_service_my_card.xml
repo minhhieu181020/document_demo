@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+    android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:tint="@color/lifecardsdk_orange"
+        android:layout_width="@dimen/lifecardsdk_dp_5"
+        android:layout_height="@dimen/lifecardsdk_dp_5"
+        android:src="@color/lifecardsdk_black" />
+
+    <TextView
+        android:id="@+id/tvNameService"
+        android:textColor="@color/lifecardsdk_black_effective"
+        style="@style/LifeCardSDK_SmallText_13sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_10"
+        android:layout_weight="4"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/tvLimitService"
+        android:textColor="@color/lifecardsdk_black_effective"
+        style="@style/LifeCardSDK_SmallText_13sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="right" />
+</LinearLayout>

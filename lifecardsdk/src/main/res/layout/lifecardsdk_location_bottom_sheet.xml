@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/lifecardsdk_dp_400"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/LifeCardSDK_BigText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_16"
+            android:layout_marginBottom="@dimen/lifecardsdk_dp_16"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_location_title" />
+
+        <View
+            style="@style/LifeCardSDK_ViewLine_Gray" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="@dimen/lifecardsdk_dp_12"
+        android:paddingRight="@dimen/lifecardsdk_dp_12"
+        android:id="@+id/rvContent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lifecardsdk_dp_400"
+        android:layout_below="@+id/llTitle"
+        android:paddingBottom="@dimen/lifecardsdk_dp_12" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

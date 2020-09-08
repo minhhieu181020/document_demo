@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/app_colorPrimary"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/lifecardsdk_dp_30"
+        android:paddingRight="@dimen/lifecardsdk_dp_30">
+
+        <ImageView
+            android:layout_width="@dimen/lifecardsdk_dp_250"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:src="@mipmap/ic_logo_lifecard" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/round_white"
+            android:gravity="center"
+            android:padding="@dimen/lifecardsdk_dp_16"
+            android:text="Thông tin khách hàng"
+            android:textAlignment="center"
+            android:textColor="@color/app_colorPrimary"
+            android:textSize="@dimen/lifecardsdk_sp_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#f7f7f7"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/lifecardsdk_dp_30"
+        android:paddingRight="@dimen/lifecardsdk_dp_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_white2"
+            android:elevation="@dimen/lifecardsdk_dp_3"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/lifecardsdk_dp_16"
+            android:paddingRight="@dimen/lifecardsdk_dp_16"
+            android:paddingBottom="@dimen/lifecardsdk_dp_16">
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lifecardsdk_white"
+                android:hint="Tên khách hàng">
+
+                <EditText
+                    android:id="@+id/edtCustomerName"
+                    style="@style/LifeCardSDK_NormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lifecardsdk_white"
+                android:hint="Số điện thoại khách hàng">
+
+                <EditText
+                    android:id="@+id/edtPhoneNumber"
+                    style="@style/LifeCardSDK_NormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lifecardsdk_white"
+                android:hint="RefCustID"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edtRefCustID"
+                    style="@style/LifeCardSDK_NormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4_sdp">
+
+                <RadioButton
+                    android:id="@+id/RdPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VIVIET"
+                    android:textSize="@dimen/_16_sdp" />
+
+                <RadioButton
+                    android:id="@+id/RdNotPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="B-Tek"
+                    android:textSize="@dimen/_16_sdp" />
+
+                <RadioButton
+                    android:id="@+id/RdMailinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mai Linh"
+                    android:textSize="@dimen/_16_sdp" />
+
+                <RadioButton
+                    android:id="@+id/RdHighLand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Highlands Coffee"
+                    android:textSize="@dimen/_16_sdp" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnOpenSDK"
+                style="@style/Button_Big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_24"
+                android:background="@drawable/round_primary"
+                android:text="Đăng nhập"
+                android:textColor="@color/lifecardsdk_white"
+                android:textSize="@dimen/lifecardsdk_sp_16" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="@dimen/lifecardsdk_dp_40"
+            android:layout_height="@dimen/lifecardsdk_dp_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_25"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

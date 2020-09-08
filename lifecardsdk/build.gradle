@@ -1,0 +1,89 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.google.gms.google-services'
+
+ext {
+    bintrayRepo = 'maven' // Name of the Bintray repo you created
+    bintrayName = 'com.ldp.lifecard:lifecardsdk' // Bintray package name
+
+    publishedGroupId = 'com.ldp.lifecard'
+    // Group ID of the SDK which will be added in implementation line of gradle
+    artifact = 'lifecardsdk'
+    // Artifact ID of the SDK which will be added in implementation line of gradle
+    libraryVersion = '0.0.1' // Version of the library you created in Bintray
+
+    libraryName = 'LifeCardSDK' // It is generally the module name
+    libraryDescription = 'LifeCardSDK' // Small description of the library
+
+    siteUrl = 'https://github.com/nguyenhuuvan'
+    gitUrl = 'https://github.com/nguyenhuuvan/LifeCardSDK'
+
+    developerId = 'kid1412'
+    developerName = 'Nguyen Huu Van'
+    developerEmail = 'vannh.job@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+
+    //Bintray Credentials
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
+    bintrayUsername = properties.getProperty('BINTRAY_USERNAME')
+    bintrayUserOrg = properties.getProperty('BINTRAY_ORG')
+    bintrayApiKey = properties.getProperty('BINTRAY_API_KEY')
+}
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true //Loại bỏ những tài nguyên không cần thiết
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true //Loại bỏ những tài nguyên không cần thiết
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android:flexbox:1.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'io.github.yavski:fab-speed-dial:1.0.6'
+    implementation 'com.google.firebase:firebase-ml-vision:20.0.0'
+    implementation 'com.google.firebase:firebase-ml-vision-face-model:17.0.2'
+
+//    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+//   implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+//    implementation project(":zxing-release")
+
+    //implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    //implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    //implementation 'com.aurelhubert:ahbottomnavigation:2.2.0'
+    //implementation 'com.intuit._sdp:_sdp-android:1.0.4'
+    //implementation 'org.sufficientlysecure:html-textview:3.9'
+}
+apply from: 'bintray.script'

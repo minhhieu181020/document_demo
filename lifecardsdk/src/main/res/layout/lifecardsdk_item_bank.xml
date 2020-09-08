@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingRight="@dimen/lifecardsdk_dp_12"
+    android:paddingLeft="@dimen/lifecardsdk_dp_12"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            style="@style/LifeCardSDK_Text_Content_Left"
+            android:text="@string/lifecardsdk_bank_name_acount" />
+
+        <TextView
+            android:id="@+id/tvBankAccountName"
+            style="@style/LifeCardSDK_Text_Content_Right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        tools:ignore="UselessParent">
+
+        <TextView
+            style="@style/LifeCardSDK_Text_Content_Left"
+            android:text="@string/lifecardsdk_bank_bank" />
+
+        <TextView
+            android:id="@+id/tvBank"
+            style="@style/LifeCardSDK_Text_Content_Right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        tools:ignore="UselessParent">
+
+        <TextView
+            style="@style/LifeCardSDK_Text_Content_Left"
+            android:text="@string/lifecardsdk_bank_branch" />
+
+        <TextView
+            android:id="@+id/tvBranch"
+            style="@style/LifeCardSDK_Text_Content_Right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        tools:ignore="UselessParent">
+
+        <TextView
+            style="@style/LifeCardSDK_Text_Content_Left"
+            android:text="@string/lifecardsdk_bank_number_account" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:id="@+id/tvBankNumber"
+                style="@style/LifeCardSDK_Text_Content_Right" />
+            <ImageView
+                android:id="@+id/imgCopy"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/lifecardsdk_dp_4"
+                android:src="@drawable/lifecardsdk_ic_lifecardsdk_icon_copy"
+                style="@style/LifeCardSDK_SquareMenuItem"
+                android:layout_width="@dimen/lifecardsdk_dp_24"
+                android:layout_height="@dimen/lifecardsdk_dp_24"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:id="@+id/viewVertical" style="@style/LifeCardSDK_ViewLine_Gray" />
+</LinearLayout>

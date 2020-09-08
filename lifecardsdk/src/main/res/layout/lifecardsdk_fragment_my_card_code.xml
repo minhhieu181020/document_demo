@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_swiperefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsvContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llMycodeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                    android:padding="@dimen/lifecardsdk_dp_8"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:background="@drawable/lifecardsdk_bg_round_white5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvNameCards"
+                        style="@style/LifeCardSDK_NormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:layout_gravity="center"
+                        android:textColor="@color/lifecardsdk_gray1"
+                        android:text=""
+                        android:textSize="@dimen/lifecardsdk_dp_20" />
+
+                    <TextView
+                        android:id="@+id/tvNumberCard"
+                        style="@style/LifeCardSDK_HeaderText_sp20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/lifecardsdk_dp_18" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:background="@drawable/lifecardsdk_bg_rounded_white"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgGenerateQR"
+                        android:layout_width="@dimen/lifecardsdk_dp_195"
+                        android:layout_height="@dimen/lifecardsdk_dp_195"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/lifecardsdk_dp_2"
+                        android:src="@mipmap/qrcode1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lltimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_5"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_cached_24"
+                        android:gravity="center"
+                        android:drawablePadding="@dimen/lifecardsdk_dp_4"
+                        android:text="Tự động cập nhật sau "
+                        android:textSize="@dimen/lifecardsdk_dp_13" />
+
+                    <TextView
+                        android:id="@+id/tvTimeCount"
+                        style="@style/LifeCardSDK_HeaderTextBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="@dimen/lifecardsdk_dp_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=" giây"
+                        android:textSize="@dimen/lifecardsdk_dp_13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lltimeout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_5"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/lifecardsdk_dp_18"
+                        android:layout_height="@dimen/lifecardsdk_dp_18"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:src="@drawable/lifecardsdk_ic_icon_check_1" />
+
+                    <TextView
+                        android:layout_width="@dimen/lifecardsdk_dp_120"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Đã cập nhật"
+                        android:textSize="@dimen/lifecardsdk_dp_16" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_5"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                    android:gravity="center"
+                    android:text="@string/lifecardsdk_my_code_conten"
+                    android:textSize="@dimen/lifecardsdk_dp_13" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lltvtotalNumber"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            style="@style/LifeCardSDK_ViewLine_Gray"
+                            android:layout_width="0dp"
+                            android:layout_height="0.5dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/lifecardsdk_dp_2"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                            android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/tvtotalNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/lifecardsdk_black"
+                            android:textSize="@dimen/lifecardsdk_sp_15"
+                            />
+
+                        <View
+                            style="@style/LifeCardSDK_ViewLine_Gray"
+                            android:layout_width="0dp"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/lifecardsdk_dp_2"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                            android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <com.lpb.lifecardsdk.widget.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                        android:layout_marginBottom="@dimen/lifecardsdk_dp_4"
+                        app:fillColor="@color/lifecardsdk_orange"
+                        app:pageColor="@color/lifecardsdk_white"
+                        app:snap="false" />
+
+                    <com.lpb.lifecardsdk.widget.HeightWrappingViewPager
+                        android:id="@+id/pager"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lifecardsdk_dp_258"
+                        android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                        android:layout_marginRight="@dimen/lifecardsdk_dp_8" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

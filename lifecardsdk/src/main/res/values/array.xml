@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lifecardsdk_planets_array">
+        <item>Quét QR sử dụng dịch vụ</item>
+        <item>Kiểm tra thông tin khách hàng</item>
+    </string-array>
+</resources>

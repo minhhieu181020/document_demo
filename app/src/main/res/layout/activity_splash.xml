@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg_splash"
+    android:tag="layout/activity_splash_0">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_85"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_85"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgSplashImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@mipmap/ic_logo_lifecard"/>
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:visibility="invisible"
+            android:id="@+id/number_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:progress_max="100"
+            style="@style/ProgressBar"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="@dimen/lifecardsdk_sp_14"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_24"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_24"
+        android:text="Sản phẩm của Công ty Cổ phần Phát triển Công nghệ Liên Việt"
+        android:textColor="@color/lifecardsdk_white" />
+</RelativeLayout>

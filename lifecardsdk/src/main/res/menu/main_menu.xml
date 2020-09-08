@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/lifecardsdk_ic_credit_card_black_24dp"
+        android:title="@string/lifecardsdk_add_card" />
+    <item
+        android:id="@+id/action_text"
+        android:icon="@drawable/lifecardsdk_ic_camera_enhance_black_24dp"
+        android:title="@string/lifecardsdk_common_scan_qr_code" />
+</menu>

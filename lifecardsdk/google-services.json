@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "1037516580699",
+    "firebase_url": "https://facedetector-2c1a7.firebaseio.com",
+    "project_id": "facedetector-2c1a7",
+    "storage_bucket": "facedetector-2c1a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037516580699:android:6c32e8d6a181bb6acf5c7e",
+        "android_client_info": {
+          "package_name": "com.lpb.lifecardsdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037516580699-vbethlo39b4v9p4pvi57lpr3lm9orm8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lpb.lifecardsdk",
+            "certificate_hash": "e564033dac752c6de573f6666fdd741480e5e38c"
+          }
+        },
+        {
+          "client_id": "1037516580699-qp08i5t450s7c4ndnsbbo1sngutkpli6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3wnxpwgE11h2iT77iw1io5cvMDzN8Omc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037516580699-qp08i5t450s7c4ndnsbbo1sngutkpli6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037516580699:android:999f2967161271f1cf5c7e",
+        "android_client_info": {
+          "package_name": "com.lvt.facedetectorsdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037516580699-gqr96pd89gpsll9ejnmhk4b0ua60l0t2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lvt.facedetectorsdk",
+            "certificate_hash": "e564033dac752c6de573f6666fdd741480e5e38c"
+          }
+        },
+        {
+          "client_id": "1037516580699-qp08i5t450s7c4ndnsbbo1sngutkpli6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3wnxpwgE11h2iT77iw1io5cvMDzN8Omc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037516580699-qp08i5t450s7c4ndnsbbo1sngutkpli6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037516580699:android:85dc590ac9ea3859cf5c7e",
+        "android_client_info": {
+          "package_name": "com.vannh.dev.facedetector2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037516580699-n8ifn704rlq449ru390807km3lem9bmn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vannh.dev.facedetector2",
+            "certificate_hash": "e564033dac752c6de573f6666fdd741480e5e38c"
+          }
+        },
+        {
+          "client_id": "1037516580699-qp08i5t450s7c4ndnsbbo1sngutkpli6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3wnxpwgE11h2iT77iw1io5cvMDzN8Omc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037516580699-qp08i5t450s7c4ndnsbbo1sngutkpli6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

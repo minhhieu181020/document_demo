@@ -1,0 +1,79 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:layout_height="@dimen/lifecardsdk_default_toolbar_height"-->
+<!--    android:layout_marginTop="@dimen/lifecardsdk_dp_8"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:background="@color/lifecardsdk_screen_background">-->
+
+<!--    <ImageView-->
+
+<!--        android:id="@+id/imgBack"-->
+<!--        style="@style/LifeCardSDK_IconToolbar"-->
+<!--        android:src="@drawable/lifecardsdk_ic_back_black" />-->
+
+<!--    <com.lpb.lifecardsdk.widget.CustomEditTextClearable-->
+<!--        android:elevation="@dimen/lifecardsdk_dp_4"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/lifecardsdk_bg_edt_search"-->
+<!--        android:id="@+id/edtSearch"-->
+<!--        style="@style/LifeCardSDK_EditText.Drawable"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:drawableLeft="@drawable/lifecardsdk_ic_search_black_big"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:hint="@string/lifecardsdk_search_hint"-->
+<!--        android:imeOptions="actionSearch"-->
+<!--        android:layout_marginRight="@dimen/lifecardsdk_dp_12"-->
+<!--        android:inputType="text"-->
+<!--        android:drawableStart="@drawable/lifecardsdk_ic_search_black_big" />-->
+
+<!--    <ImageView-->
+<!--        android:visibility="gone"-->
+<!--        android:tint="@color/lifecardsdk_black"-->
+<!--        android:id="@+id/imgFilter"-->
+<!--        style="@style/LifeCardSDK_IconToolbar"-->
+<!--        android:src="@mipmap/lifecardsdk_ic_filter" />-->
+<!--</LinearLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rlToolbar"
+    android:layout_height="@dimen/lifecardsdk_default_toolbar_height"
+    android:background="@color/lifecardsdk_screen_background">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        style="@style/LifeCardSDK_IconToolbar"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lifecardsdk_ic_back_black" />
+
+    <com.lpb.lifecardsdk.widget.CustomEditTextClearable
+        android:id="@+id/edtSearch"
+        style="@style/LifeCardSDK_EditText.Drawable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+        android:layout_weight="1"
+        android:background="@drawable/lifecardsdk_bg_edt_search"
+        android:drawableStart="@drawable/lifecardsdk_ic_search_black_big"
+        android:drawableLeft="@drawable/lifecardsdk_ic_search_black_big"
+        android:elevation="@dimen/lifecardsdk_dp_4"
+        android:gravity="center_vertical"
+        android:hint="@string/lifecardsdk_search_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgFilter"
+        style="@style/LifeCardSDK_IconToolbar"
+        android:src="@mipmap/lifecardsdk_ic_filter"
+        android:tint="@color/lifecardsdk_black"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/lifecardsdk_buy_card" style="@style/LifeCardSDK_ScreenTitle"/>
+</RelativeLayout>

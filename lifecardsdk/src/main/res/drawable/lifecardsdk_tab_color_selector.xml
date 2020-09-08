@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Không sửa file này-->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/lifecardsdk_orange"/>
+            <corners android:radius="@dimen/lifecardsdk_dp_4"/>
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/lifecardsdk_white"/>
+        </shape>
+    </item>
+</selector>

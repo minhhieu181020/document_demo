@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LifeCardSDK_SquareMenuItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/lifecardsdk_dp_2"
+    android:orientation="vertical"
+    android:padding="@dimen/lifecardsdk_dp_10"
+    app:cardCornerRadius="@dimen/lifecardsdk_dp_8">
+
+    <ImageView
+        android:id="@+id/imglogocard"
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="@dimen/lifecardsdk_dp_50"
+        android:layout_height="@dimen/lifecardsdk_dp_50"
+        android:background="@drawable/lifecardsdk_bg_rounded_white" />
+</android.support.v7.widget.CardView>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lifecardsdk_screen_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/lifecardsdk_default_toolbar_height"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+        android:gravity="center_vertical"
+        android:background="@color/lifecardsdk_screen_background">
+
+        <ImageView
+
+            android:id="@+id/imgBack"
+            style="@style/LifeCardSDK_IconToolbar"
+            android:src="@drawable/lifecardsdk_ic_back_black" />
+
+        <com.lpb.lifecardsdk.widget.CustomEditTextClearable
+            android:elevation="@dimen/lifecardsdk_dp_4"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+            android:background="@drawable/lifecardsdk_bg_edt_search"
+            android:id="@+id/edtSearch"
+            style="@style/LifeCardSDK_EditText.Drawable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lifecardsdk_ic_search_black_big"
+            android:gravity="center_vertical"
+            android:hint="@string/lifecardsdk_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/clContainer"
+        android:visibility="gone"
+        android:layout_below="@id/llToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lifecardsdk_screen_background">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lifecardsdk_transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="@dimen/lifecardsdk_dp_0">
+
+            <LinearLayout
+                android:id="@+id/llOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCategoryMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_4"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_4" />
+                <HorizontalScrollView
+                    style="@style/LifeCardSDK_MarginHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_11"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lifecardsdk_dp_2"
+                        android:layout_marginRight="@dimen/lifecardsdk_dp_2"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnLasted"
+                            style="@style/LifeCardSDK_Button_Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/lifecardsdk_round_button_orange"
+                            android:text="@string/lifecardsdk_buy_card_lasted"
+                            android:textColor="@color/lifecardsdk_white" />
+
+                        <Button
+                            android:id="@+id/btnSaving"
+                            style="@style/LifeCardSDK_Button_Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                            android:background="@drawable/lifecardsdk_round_button_defaut"
+                            android:text="@string/lifecardsdk_buy_card_saving"
+                            android:textColor="@color/lifecardsdk_gray" />
+
+                        <Button
+                            android:id="@+id/btnNearest"
+                            style="@style/LifeCardSDK_Button_Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                            android:background="@drawable/lifecardsdk_round_button_defaut"
+                            android:text="@string/lifecardsdk_buy_card_my_location"
+                            android:textColor="@color/lifecardsdk_gray" />
+
+                        <Button
+                            android:id="@+id/btnPrice"
+                            style="@style/LifeCardSDK_Button_Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                            android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                            android:background="@drawable/lifecardsdk_round_button_defaut"
+                            android:drawableRight="@drawable/lifecardsdk_ic_unfold_more_big"
+                            android:text="@string/lifecardsdk_buy_card_price"
+                            android:textColor="@color/lifecardsdk_gray" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <include layout="@layout/lifecardsdk_layout_setting_location" />
+
+                <include layout="@layout/lifecardsdk_layout_turn_on_location" />
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/lifecardsdk_dp_4" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlSearchNoResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/lifecardsdk_dp_120"
+                android:layout_height="@dimen/lifecardsdk_dp_120"
+                android:src="@mipmap/lifecardsdk_search_no_result" />
+
+            <TextView
+                style="@style/LifeCardSDK_HeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                android:gravity="center"
+                android:text="@string/lifecardsdk_buy_card_cant_find" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

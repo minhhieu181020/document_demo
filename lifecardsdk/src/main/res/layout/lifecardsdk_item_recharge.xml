@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/lifecardsdk_dp_4"
+    android:layout_marginRight="@dimen/lifecardsdk_dp_4"
+    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+    android:background="@drawable/lifecardsdk_bg_white_radius"
+    android:orientation="vertical"
+    android:padding="@dimen/lifecardsdk_dp_6">
+    <TextView
+        android:id="@+id/tvPrice"
+        style="@style/LifeCardSDK_NormalTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <TextView
+        android:textSize="@dimen/lifecardsdk_sp_11"
+        android:id="@+id/tvDesc"
+        style="@style/LifeCardSDK_SmallText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPrice"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+        android:gravity="center"
+        android:text="@string/lifecardsdk_recharge_use_limit" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        style="@style/LifeCardSDK_NormalTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDesc"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+        android:gravity="center"
+        android:textColor="@color/lifecardsdk_orange" />
+
+</RelativeLayout>

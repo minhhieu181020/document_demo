@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/buy_card" app:showAsAction="always" android:icon="@mipmap/lifecardsdk_buy_card"  android:title="@string/lifecardsdk_common_buy_card"/>
+    <item android:id="@+id/my_card" android:title="@string/lifecardsdk_common_my_card"/>
+    <item android:id="@+id/qr_code_used" android:title="@string/lifecardsdk_common_qr_code_used"/>
+    <item android:id="@+id/scan_qr_code" android:title="@string/lifecardsdk_common_scan_qr_code"/>
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/lifecardsdk_layout_toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+        android:layout_below="@+id/rlToolbar"
+        android:id="@+id/rvSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@+id/rlToolbar"
+        android:visibility="gone"
+        android:id="@+id/llSettings"
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_8"
+        android:background="@drawable/lifecardsdk_bg_round_white"
+        android:elevation="@dimen/lifecardsdk_dp_2"
+        android:gravity="center"
+        android:padding="@dimen/lifecardsdk_dp_12">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/lifecardsdk_dp_48"
+            android:layout_height="@dimen/lifecardsdk_dp_48"
+            android:src="@drawable/ic_lifecardsdk_face_scan" />
+
+        <TextView
+            android:text="@string/lifecardsdk_settings_register_face_authen"
+            android:id="@+id/tvSettings"
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+            android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

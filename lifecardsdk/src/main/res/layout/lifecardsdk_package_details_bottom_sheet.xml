@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/lifecardsdk_dp_8"
+    android:paddingRight="@dimen/lifecardsdk_dp_8">
+
+    <View
+        android:layout_width="@dimen/lifecardsdk_dp_60"
+        android:layout_height="@dimen/lifecardsdk_dp_4"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:background="@drawable/lifecardsdk_bg_round_gray" />
+
+    <TextView
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_18"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:text="Sử dụng dịch vụ đồ uống" />
+    <!--Còn hiệu lực-->
+    <LinearLayout
+        android:id="@+id/llstill_validated"
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:background="@drawable/lifecardsdk__bg_rounded_green"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lifecardsdk_dp_5"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_2"
+            android:layout_marginRight="@dimen/lifecardsdk_dp_5"
+            android:layout_marginBottom="@dimen/lifecardsdk_dp_2"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_Still_validated"
+            android:textColor="@color/lifecardsdk_white" />
+    </LinearLayout>
+    <!--hết hiệu lực-->
+    <LinearLayout
+        android:id="@+id/llExpire"
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:background="@drawable/lifecardsdk__bg_rounded_gray"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lifecardsdk_dp_5"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_Expire"
+            android:textColor="@color/lifecardsdk_gray1" />
+    </LinearLayout>
+    <!--Chờ thanh toán-->
+    <LinearLayout
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:background="@drawable/lifecardsdk__bg_rounded_yellow"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lifecardsdk_dp_5"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_Wait_for_payment"
+            android:textColor="@color/lifecardsdk_white" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:drawableLeft="@drawable/lifecarksdk_ic_event_note_gray_14dp"
+        android:drawablePadding="@dimen/lifecardsdk_dp_8"
+        android:text="@string/lifecardsdk_buy_card_use_limit"
+        android:textColor="@color/lifecardsdk_gray"
+        android:textSize="@dimen/lifecardsdk_dp_13" />
+
+    <TextView
+        android:id="@+id/tvUseLimit"
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:text="1.000.000 đ" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_6"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:drawableLeft="@drawable/lifecardsdk__ic_account_balance_wallet_black_14dp"
+        android:drawablePadding="@dimen/lifecardsdk_dp_8"
+        android:text="@string/lifecardsdk_buy_card_expiration_date"
+        android:textColor="@color/lifecardsdk_gray"
+        android:textSize="@dimen/lifecardsdk_sp_13" />
+
+    <TextView
+        android:id="@+id/tvExpirationDate"
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:text="90 ngày" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lifecardsdk_dp_0_7"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:background="@color/lifecardsdk_gray2" />
+
+    <TextView
+        style="@style/LifeCardSDK_NormalTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+        android:text="Thể lệ: " />
+
+    <TextView
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:text="- Áp dụng: Tất cả các chi nhánh của
+Highlands Coffee
+\n- Hạn mức: 1.000.000 đ
+\n- Hiệu lực: 3 tháng" />
+
+    <TextView
+        style="@style/LifeCardSDK_NormalTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+        android:text="Mô tả" />
+
+    <TextView
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_16"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_12"
+        android:text="Các sản phẩm cung cấp: \n- Coffee \n- Tea \n- Sinh tố: Xoài, Bơ \n- Cake " />
+</LinearLayout>

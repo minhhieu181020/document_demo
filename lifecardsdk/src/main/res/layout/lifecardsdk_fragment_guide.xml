@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background">
+
+    <include layout="@layout/lifecardsdk_layout_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnBranch"
+        android:layout_below="@+id/rlToolbar"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llProvider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <com.lpb.lifecardsdk.widget.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/cpiViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_6"
+                android:padding="10dip"
+                android:visibility="gone"
+                app:fillColor="@color/lifecardsdk_orange"
+                app:pageColor="@color/lifecardsdk_white"
+                app:snap="false" />
+
+            <TextView
+                style="@style/LifeCardSDK_HeaderTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_6"
+                android:text="@string/lifecardsdk_buy_card_provider" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBranch"
+        style="@style/LifeCardSDK_Button_Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+        android:background="@drawable/lifecardsdk_round_button_orange"
+        android:text="@string/lifecardsdk_guide_search_branch"
+        android:textColor="@color/lifecardsdk_white"
+        android:textSize="@dimen/lifecardsdk_sp_16"
+        android:visibility="gone" />
+</RelativeLayout>

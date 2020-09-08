@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35_sdp"
+        android:layout_marginTop="@dimen/_8_sdp"
+        android:background="@color/lifecardsdk_screen_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/imgBack"
+            style="@style/LifeCardSDK_IconToolbar"
+            android:src="@drawable/lifecardsdk_ic_back_black" />
+
+        <com.lpb.lifecardsdk.widget.CustomEditTextClearable
+            android:id="@+id/edtSearch"
+            style="@style/LifeCardSDK_EditText.Drawable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/lifecardsdk_bg_edt_search"
+            android:drawableLeft="@drawable/lifecardsdk_ic_search_black_big"
+            android:elevation="@dimen/_4_sdp"
+            android:gravity="center_vertical"
+            android:hint="@string/lifecardsdk_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="@dimen/_13_sdp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvCancel"-->
+        <!--            style="@style/LifeCardSDK_SquareMenuItem"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="@dimen/lifecardsdk_dp_12"-->
+        <!--            android:layout_marginRight="@dimen/lifecardsdk_dp_12"-->
+        <!--            android:text="@string/lifecardsdk_common_cancel"-->
+        <!--            android:textColor="@color/lifecardsdk_black" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--Mua ther tra truoc-->
+    <RelativeLayout
+        android:id="@+id/rlSearchNoResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_100_sdp"
+                android:layout_height="@dimen/_100_sdp"
+                android:src="@mipmap/lifecardsdk_search_no_result" />
+
+            <TextView
+                style="@style/LifeCardSDK_HeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8_sdp"
+                android:gravity="center"
+                android:text="@string/lifecardsdk_buy_card_cant_find"
+                android:textSize="@dimen/_13_sdp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--Recyclerview Card-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+</LinearLayout>

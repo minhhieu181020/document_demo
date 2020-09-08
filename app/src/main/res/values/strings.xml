@@ -1,0 +1,5 @@
+<resources>
+    <!--    <string name="app_name">Customer (TEST)</string>-->
+    <string name="app_name">Customer (UAT)</string>
+    <!--    <string name="app_name">Customer (PROD)</string>-->
+</resources>

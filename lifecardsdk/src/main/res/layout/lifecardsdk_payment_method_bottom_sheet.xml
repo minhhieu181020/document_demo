@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/lifecardsdk_dp_8"
+    android:paddingRight="@dimen/lifecardsdk_dp_8">
+
+    <View
+        android:layout_width="@dimen/lifecardsdk_dp_60"
+        android:layout_height="@dimen/lifecardsdk_dp_4"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:background="@drawable/lifecardsdk_bg_round_gray" />
+
+    <TextView
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_18"
+        android:text="@string/lifecardsdk_buycard_card_select_payment_method" />
+
+    <com.lpb.lifecardsdk.widget.RelativeRadioGroup
+        android:id="@+id/rgPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_24"
+        android:checkedButton="@id/rbViViet">
+
+
+        <RadioButton
+            android:id="@+id/rbViViet"
+            style="@style/LifeCardSDK_NormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/lifecardsdk_logo_viviet"
+            android:text="Thanh toán bằng Ví Việt" />
+
+        <RadioButton
+            android:id="@+id/rbSacombank"
+            style="@style/LifeCardSDK_NormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbViViet"
+            android:drawableRight="@mipmap/lifecardsdk_sacombank"
+            android:text="Thanh toán bằng SacombankPay" />
+
+
+        <RadioButton
+            android:id="@+id/rbTheQuocTe"
+            style="@style/LifeCardSDK_NormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbSacombank"
+            android:drawableRight="@mipmap/lifecardsdk_thequocte"
+            android:text="Thanh toán bằng thẻ quốc tế" />
+
+
+        <RadioButton
+            android:id="@+id/rbATMNoiDia"
+            style="@style/LifeCardSDK_NormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbTheQuocTe"
+            android:drawableRight="@mipmap/lifecardsdk_atmnoidia"
+            android:text="Thanh toán bằng Thẻ ATM nội địa
+/Internet Banking " />
+
+        <RadioButton
+            android:id="@+id/rbTienMat"
+            style="@style/LifeCardSDK_NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbATMNoiDia"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_6" />
+
+        <TextView
+            android:id="@+id/tvHuongDan"
+            style="@style/LifeCardSDK_NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rbTienMat"
+            android:layout_toRightOf="@id/rbTienMat" />
+    </com.lpb.lifecardsdk.widget.RelativeRadioGroup>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_5"
+        android:orientation="horizontal"
+        android:padding="@dimen/lifecardsdk_dp_10">
+
+        <TextView
+            android:id="@+id/tvTimeHistoryCase3Row4"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="@dimen/lifecardsdk_dp_16"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="01/02/019" />
+
+        <TextView
+            android:id="@+id/tvMoneyCase3Row4"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="@dimen/lifecardsdk_dp_16"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="+100.000 VNĐ" />
+
+        <TextView
+            android:id="@+id/tvNumberCase3Row4"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/lifecardsdk_dp_16"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tvCreditLimitCase3Row4"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/lifecardsdk_dp_16"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="500.000 VNĐ" />
+    </LinearLayout>
+
+
+</LinearLayout>

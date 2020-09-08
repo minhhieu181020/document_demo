@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:padding="@dimen/lifecardsdk_dp_10"
+android:shape="rectangle">
+<!--Không sửa file này-->
+<solid android:color="@color/lifecardsdk_white" />
+<corners android:radius="@dimen/lifecardsdk_dp_6" />
+</shape>

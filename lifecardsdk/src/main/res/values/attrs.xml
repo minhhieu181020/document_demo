@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LifeCardSDK_AHBottomNavigationBehavior_Params">
+        <attr name="tabLayoutId" format="reference" />
+        <attr name="selectedBackgroundVisible" format="boolean" />
+        <attr name="translucentNavigationEnabled" format="boolean" />
+        <attr name="colored" format="boolean" />
+        <attr name="accentColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="disableColor" format="color" />
+        <attr name="coloredActive" format="color" />
+        <attr name="coloredInactive" format="color" />
+    </declare-styleable>
+    <declare-styleable name="LifeCardSDK_ExpandableLayout">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_parallax" format="float" />
+        <attr name="android:orientation"/>
+    </declare-styleable>
+    <declare-styleable name="Lcm_BarcodeScannerView">
+        <attr name="shouldScaleToFill" format="boolean" />
+        <attr name="laserEnabled" format="boolean" />
+        <attr name="laserColor" format="color" />
+        <attr name="borderColor" format="color" />
+        <attr name="maskColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderLength" format="dimension" />
+        <attr name="roundedCorner" format="boolean" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="squaredFinder" format="boolean" />
+        <attr name="borderAlpha" format="float" />
+        <attr name="finderOffset" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LifeCardSDKAutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="LifeCardSDK_MinTextSize" format="dimension" />
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="LifeCardSDK_Precision" format="float" />
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="LifeCardSDK_SizeToFit" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LifeCardSDKCircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="LifeCardSDKMaskView">
+        <attr name="ratioWidth" format="integer" />
+        <attr name="ratioHeight" format="integer" />
+        <attr name="backgroundSrc" format="reference" />
+        <attr name="backgroundInnerView" format="integer" />
+        <attr name="percentWidth" format="float" />
+        <attr name="percentHeight" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="LifeCardSDKCircleProgressBar">
+        <attr name="line_count" format="integer|reference" />
+        <attr name="bar_line_width" format="dimension|reference" />
+        <attr name="progress_start_color" format="color|reference" />
+        <attr name="progress_end_color" format="color|reference" />
+        <attr name="progress_text_color" format="color|reference" />
+        <attr name="progress_text_size" format="dimension|reference" />
+        <attr name="progress_stroke_width" format="dimension|reference" />
+        <attr name="progress_background_color" format="color|reference" />
+        <attr name="progress_start_degree" format="integer|reference" />
+        <attr name="drawBackgroundOutsideProgress" format="boolean|reference" />
+        <attr name="style">
+            <enum name="line" value="0" />
+            <enum name="solid" value="1" />
+            <enum name="solid_line" value="2" />
+        </attr>
+        <attr name="progress_shader">
+            <enum name="linear" value="0" />
+            <enum name="radial" value="1" />
+            <enum name="sweep" value="2" />
+        </attr>
+        <attr name="progress_stroke_cap">
+            <enum name="butt" value="0" />
+            <enum name="round" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lifecardsdk_transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="@dimen/lifecardsdk_dp_0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_7"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rlCity"
+                    style="@style/LifeCardSDK_SquareMenuItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/lifecardsdk_dp_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/lifecardsdk_bg_round_white"
+                    android:elevation="@dimen/lifecardsdk_dp_2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/lifecardsdk_dp_12"
+                    android:paddingTop="@dimen/lifecardsdk_dp_8"
+                    android:paddingRight="@dimen/lifecardsdk_dp_4"
+                    android:paddingBottom="@dimen/lifecardsdk_dp_8">
+
+                    <TextView
+                        android:id="@+id/tvCity"
+                        style="@style/LifeCardSDK_NormalText_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/imgDdCity"
+                        android:singleLine="true"
+                        android:text="@string/lifecardsdk_provider_city" />
+
+                    <ImageView
+                        android:id="@+id/imgDdCity"
+                        android:layout_width="@dimen/lifecardsdk_dp_24"
+                        android:layout_height="@dimen/lifecardsdk_dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/lifecardsdk_ic_arrow_drop_down_black_24dp"
+                        android:tint="@color/lifecardsdk_orange" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlDistrict"
+                    style="@style/LifeCardSDK_SquareMenuItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/lifecardsdk_bg_round_white"
+                    android:elevation="@dimen/lifecardsdk_dp_2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/lifecardsdk_dp_12"
+                    android:paddingTop="@dimen/lifecardsdk_dp_8"
+                    android:paddingRight="@dimen/lifecardsdk_dp_4"
+                    android:paddingBottom="@dimen/lifecardsdk_dp_8">
+
+                    <TextView
+                        android:id="@+id/tvDistrict"
+                        style="@style/LifeCardSDK_NormalText_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/imgDdDistrict"
+                        android:singleLine="true"
+                        android:text="@string/lifecardsdk_provider_district" />
+
+                    <ImageView
+                        android:id="@+id/imgDdDistrict"
+                        android:layout_width="@dimen/lifecardsdk_dp_24"
+                        android:layout_height="@dimen/lifecardsdk_dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/lifecardsdk_ic_arrow_drop_down_black_24dp"
+                        android:tint="@color/lifecardsdk_orange" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlVillage"
+                    style="@style/LifeCardSDK_SquareMenuItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+                    android:layout_weight="1"
+                    android:background="@drawable/lifecardsdk_bg_round_white"
+                    android:elevation="@dimen/lifecardsdk_dp_2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/lifecardsdk_dp_12"
+                    android:paddingTop="@dimen/lifecardsdk_dp_8"
+                    android:paddingRight="@dimen/lifecardsdk_dp_4"
+                    android:paddingBottom="@dimen/lifecardsdk_dp_8">
+
+                    <TextView
+                        android:id="@+id/tvVillage"
+                        style="@style/LifeCardSDK_NormalText_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_toLeftOf="@+id/imgDdVillage"
+                        android:singleLine="true"
+                        android:text="@string/lifecardsdk_provider_village" />
+
+                    <ImageView
+                        android:id="@+id/imgDdVillage"
+                        android:layout_width="@dimen/lifecardsdk_dp_24"
+                        android:layout_height="@dimen/lifecardsdk_dp_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/lifecardsdk_ic_arrow_drop_down_black_24dp"
+                        android:tint="@color/lifecardsdk_orange" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lifecardsdk_provider_list_branch" />
+
+                <TextView
+                    android:id="@+id/tvSeeMap"
+                    style="@style/LifeCardSDK_NormalText_Orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/lifecardsdk_dp_4"
+                    android:paddingBottom="@dimen/lifecardsdk_dp_8"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/pbBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/lifecardsdk_dp_8" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/llCantFindBranch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_24"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:layout_width="@dimen/lifecardsdk_dp_100"
+            android:layout_height="@dimen/lifecardsdk_dp_100"
+            android:src="@mipmap/lifecardsdk_search_no_result" />
+
+        <TextView
+            style="@style/LifeCardSDK_NormalText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+            android:gravity="center"
+            android:paddingLeft="@dimen/lifecardsdk_dp_32"
+            android:paddingRight="@dimen/lifecardsdk_dp_32"
+            android:text="@string/lifecardsdk_cant_find_branch" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

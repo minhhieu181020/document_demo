@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:theme="@style/LifeCardSDK_PrimaryGray">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lifecardsdk_screen_background"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/lifecardsdk_layout_main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_12" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    style="@style/LifeCardSDK_MarginHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:background="@drawable/lifecardsdk_bg_round_white"
+                    android:padding="@dimen/lifecardsdk_dp_4">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lifecardsdk_dp_36"
+                        app:tabBackground="@drawable/lifecardsdk_tab_color_selector"
+                        app:tabGravity="fill"
+                        app:tabIndicator="@null"
+                        app:tabRippleColor="@null"
+                        app:tabSelectedTextColor="@color/lifecardsdk_white"
+                        app:tabTextAppearance="@style/LifeCardSDK_TabLayout"
+                        app:tabTextColor="@color/lifecardsdk_black_effective" />
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/lifecardsdk_screen_background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/lifecardsdk_screen_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/lifecardsdk_bg_circle_orange"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/lifecardsdk_dp_80"
+                        android:layout_height="@dimen/lifecardsdk_dp_80"
+                        android:layout_gravity="center"
+                        android:src="@drawable/lifecardsdk_ic_shopping_cart_black_24dp" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_30"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_30"
+                    android:gravity="center"
+                    android:text="Mua thẻ trả trước, siêu tiết kiệm !" />
+
+                <TextView
+                    style="@style/LifeCardSDK_HeaderText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_30"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_30"
+                    android:gravity="center"
+                    android:text="Tiết kiệm tiền khi sử dụng dịch vụ ăn uống, mua sắm....
+Bạn chưa có Thẻ trả trước nào, hãy nhanh tay
+mua ngay hôm nay !" />
+
+                <Button
+                    android:id="@+id/btnMyCardBuyCard"
+                    style="@style/LifeCardSDK_SquareMenuItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+                    android:background="@color/lifecardsdk_orange"
+                    android:padding="@dimen/lifecardsdk_dp_10"
+                    android:text="Mua thẻ trả trước ngay"
+                    android:textColor="@color/lifecardsdk_white" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.lpb.lifecardsdk.widget.bottomnav.AHBottomNavigation
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+
+
+    <!--    <android.support.v4.widget.NestedScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:fillViewport="true"-->
+    <!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:visibility="visible">-->
+    <!--                <android.support.v4.view.ViewPager-->
+    <!--                    android:id="@+id/viewPager"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent" />-->
+    <!--            </LinearLayout>-->
+
+    <!--            <FrameLayout-->
+    <!--                android:id="@+id/fl_container1"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:visibility="gone" />-->
+    <!--        </LinearLayout>-->
+    <!--    </android.support.v4.widget.NestedScrollView>-->
+
+    <!--</android.support.design.widget.CoordinatorLayout>-->

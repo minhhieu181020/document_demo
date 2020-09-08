@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/lifecardsdk_layout_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/LifeCardSDK_Background_View_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_16"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/LifeCardSDK_TitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+                    android:text="@string/lifecardsdk_user_manager_card_information" />
+
+                <View style="@style/LifeCardSDK_ViewLine_Gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_NormalText_Gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lifecardsdk_user_manager_card_name" />
+
+                    <TextView
+                        android:id="@+id/tvCardName"
+                        style="@style/LifeCardSDK_NormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/lifecardsdk_dp_12"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_NormalText_Gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lifecardsdk_user_manager_card_number" />
+
+                    <TextView
+                        android:id="@+id/tvCardNumber"
+                        style="@style/LifeCardSDK_NormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/lifecardsdk_dp_12"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/LifeCardSDK_Background_View_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_16"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_8">
+
+                    <TextView
+                        style="@style/LifeCardSDK_TitleText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:text="@string/lifecardsdk_user_manager_add_user" />
+
+                    <ImageView
+                        android:id="@+id/imgContact"
+                        android:layout_width="@dimen/lifecardsdk_dp_24"
+                        android:layout_height="@dimen/lifecardsdk_dp_24"
+                        android:src="@drawable/lifecardsdk_icon_contact" />
+
+                </LinearLayout>
+
+
+                <View style="@style/LifeCardSDK_ViewLine_Gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_NormalText_Gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/lifecardsdk_user_manager_phone_number" />
+
+                    <EditText
+                        android:id="@+id/edtPhoneNumber"
+                        style="@style/LifeCardSDK_NormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/lifecardsdk_dp_12"
+                        android:layout_weight="1"
+                        android:background="@color/lifecardsdk_white"
+                        android:digits="0123456789"
+                        android:gravity="end"
+                        android:hint="@string/lifecardsdk_user_manager_hint_phone_number"
+                        android:inputType="number"
+                        tools:ignore="Autofill,TextFields" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_NormalText_Gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lifecardsdk_user_manager_user_name" />
+
+                    <EditText
+                        android:id="@+id/edtName"
+                        style="@style/LifeCardSDK_NormalText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/lifecardsdk_dp_12"
+                        android:layout_weight="1"
+                        android:background="@color/lifecardsdk_white"
+                        android:gravity="end"
+                        android:hint="@string/lifecardsdk_user_manager_hint_name"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAddUser"
+                    style="@style/LifeCardSDK_Button_Big"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:background="@drawable/lifecardsdk_round_button_orange"
+                    android:text="@string/lifecardsdk_user_manager_add"
+                    android:textColor="@color/lifecardsdk_white"
+                    android:textSize="@dimen/lifecardsdk_sp_16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llListUser"
+                style="@style/LifeCardSDK_Background_View_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_16"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/LifeCardSDK_TitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lifecardsdk_user_manager_list_user" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvListUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:orientation="vertical">
+    <!--    rlToolbar-->
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lifecardsdk_default_toolbar_height"
+        android:elevation="@dimen/lifecardsdk_dp_4">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            style="@style/LifeCardSDK_IconToolbar"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lifecardsdk_ic_back_black" />
+
+        <TextView
+            android:id="@+id/tvTitleToolbar"
+            style="@style/LifeCardSDK_ScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rlmycard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlToolbar"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/clContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lifecardsdk_screen_background"
+            android:visibility="visible">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lifecardsdk_transparent"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:elevation="@dimen/lifecardsdk_dp_0">
+
+                <LinearLayout
+                    android:id="@+id/ll_buy_card_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_10"
+                    android:background="@color/lifecardsdk_screen_background"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/lifecardsdk_dp_100"
+                            android:layout_height="@dimen/lifecardsdk_dp_100"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/lifecardsdk_icon_iconmuathe" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                        style="@style/LifeCardSDK_HeaderTextBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/lifecardsdk_Buy_prepaid_card" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                        style="@style/LifeCardSDK_SmallText_13sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:text="@string/lifecardsdk_list_card_content" />
+
+                    <Button
+                        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                        android:id="@+id/btnMyCardBuyCard"
+                        style="@style/LifeCardSDK_Button_Big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lifecardsdk_round_button_orange"
+                        android:text="@string/lifecardsdk_Buy_card_now"
+                        android:layout_marginBottom="@dimen/lifecardsdk_dp_24"
+                        android:textColor="@color/lifecardsdk_white"
+                        android:textSize="@dimen/lifecardsdk_sp_16" />
+
+                    <LinearLayout
+                        android:id="@+id/llRvCardWait"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                            android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                            android:orientation="horizontal">
+
+
+                            <include layout="@layout/lifecardsdk_layout_1dp" />
+
+                            <TextView
+                                style="@style/LifeCardSDK_HeaderTextBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/lifecardsdk_dp_8"
+                                android:textSize="@dimen/lifecardsdk_sp_20"
+                                android:text="@string/lifecardsdk_Suggestions_for_you"
+                                />
+
+                            <include layout="@layout/lifecardsdk_layout_1dp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCardWait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_4"
+                    android:visibility="visible" />
+
+
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/main_swiperefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+                </android.support.v4.widget.SwipeRefreshLayout>
+            </LinearLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!--        <io.github.yavski.fabspeeddial.FabSpeedDial-->
+        <!--            app:fabMenu="@menu/main_menu"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_gravity="end|bottom"-->
+        <!--            android:layout_margin="16dp"-->
+        <!--            android:src="@drawable/lifecardsdk_ic_done_black_24dp" />-->
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/fab_speed_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:visibility="gone"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/main_menu"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="@android:color/holo_green_light"
+            app:miniFabTitleTextColor="@android:color/black" />
+
+    </FrameLayout>
+
+    <!--    <io.github.yavski.fabspeeddial.FabSpeedDial-->
+    <!--        app:fabMenu="@menu/main_menu"-->
+    <!--        android:id="@+id/fab_speed_dial"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:layout_gravity="end|bottom"-->
+    <!--        android:layout_margin="16dp"-->
+    <!--        android:src="@drawable/lifecardsdk_ic_done_black_24dp" />-->
+    <!--        <android.support.design.widget.FloatingActionButton-->
+    <!--            style="@style/LifeCardSDK_RoundMenuItem"-->
+    <!--            android:id="@+id/fab"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_gravity="end|bottom"-->
+    <!--            android:layout_margin="16dp"-->
+    <!--            android:contentDescription="Mua ther"-->
+    <!--            android:src="@drawable/lifecardsdk_ic_done_black_24dp" />-->
+
+</RelativeLayout>

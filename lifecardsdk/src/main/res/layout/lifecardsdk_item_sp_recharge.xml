@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/LifeCardSDK_NormalText"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/lifecardsdk_dp_12"
+    android:paddingEnd="@dimen/lifecardsdk_dp_12"
+    android:singleLine="true"
+    android:layout_height="match_parent" />

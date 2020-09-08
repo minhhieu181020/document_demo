@@ -1,0 +1,51 @@
+<RelativeLayout android:visibility="gone"
+    android:id="@+id/rlCantFindLocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/lifecardsdk_dp_36"
+    android:paddingRight="@dimen/lifecardsdk_dp_36"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/lifecardsdk_dp_120"
+            android:layout_height="@dimen/lifecardsdk_dp_120"
+            android:src="@mipmap/lifecardsdk_icon_cant_find_location" />
+
+        <TextView
+
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_buy_card_cant_find_location"
+            android:textSize="@dimen/lifecardsdk_sp_20" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+            android:gravity="center"
+            android:text="@string/lifecardsdk_buy_card_notify_permission_location" />
+
+        <Button
+            android:layout_marginTop="@dimen/lifecardsdk_dp_16"
+            android:id="@+id/btnSettings"
+            style="@style/LifeCardSDK_Button_Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lifecardsdk_round_button_orange"
+            android:text="@string/lifecardsdk_settings"
+            android:textColor="@color/lifecardsdk_white"
+            android:textSize="@dimen/lifecardsdk_sp_16" />
+    </LinearLayout>
+
+</RelativeLayout>

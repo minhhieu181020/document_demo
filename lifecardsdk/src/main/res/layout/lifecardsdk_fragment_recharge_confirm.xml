@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/lifecardsdk_screen_background"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/lifecardsdk_layout_toolbar" />
+
+    <ScrollView
+        android:id="@+id/svContainer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnConfirm"
+        android:layout_below="@+id/rlToolbar"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:id="@+id/llProvider"
+                style="@style/LifeCardSDK_Background_View_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_12"
+                android:paddingBottom="@dimen/lifecardsdk_dp_4"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lifecardsdk_buy_card_provider" />
+
+                <View
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+                    style="@style/LifeCardSDK_ViewLine_Gray"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8" />
+
+                <com.lpb.lifecardsdk.widget.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/cpiViewPager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+                    android:padding="10dip"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    app:fillColor="@color/lifecardsdk_orange"
+                    app:pageColor="@color/lifecardsdk_white"
+                    app:snap="false" />
+
+                <com.lpb.lifecardsdk.widget.HeightWrappingViewPager
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_4"
+                    android:layout_marginRight="@dimen/lifecardsdk_dp_4"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:id="@+id/vpContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+                style="@style/LifeCardSDK_Background_View_White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/LifeCardSDK_TitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+                    android:text="@string/lifecardsdk_recharge_trans_details" />
+
+                <View style="@style/LifeCardSDK_ViewLine_Gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_Text_Content_Left"
+                        android:text="@string/lifecardsdk_recharge_card_name" />
+
+                    <TextView
+                        android:id="@+id/tvCardName"
+                        style="@style/LifeCardSDK_Text_Content_Right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_Text_Content_Left"
+                        android:text="@string/lifecardsdk_recharge_card_number" />
+
+                    <TextView
+                        android:id="@+id/tvCardNumber"
+                        style="@style/LifeCardSDK_Text_Content_Right" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_Text_Content_Left"
+                        android:text="@string/lifecardsdk_recharge_total_payment_price" />
+
+                    <TextView
+                        android:id="@+id/tvPricePayment"
+                        style="@style/LifeCardSDK_Text_Content_Right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_Text_Content_Left"
+                        android:text="@string/lifecardsdk_recharge_listed_price" />
+
+                    <TextView
+                        android:id="@+id/tvListedPrice"
+                        style="@style/LifeCardSDK_Text_Content_Right" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LifeCardSDK_Text_Content_Left"
+                        android:text="@string/lifecardsdk_recharge_payment_method" />
+
+                    <TextView
+                        android:id="@+id/tvPaymentMethod"
+                        style="@style/LifeCardSDK_Text_Content_Right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnConfirm"
+        style="@style/LifeCardSDK_Button_Big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+        android:background="@drawable/lifecardsdk_round_button_orange"
+        android:text="@string/lifecardsdk_confirm"
+        android:textColor="@color/lifecardsdk_white"
+        android:textSize="@dimen/lifecardsdk_sp_16" />
+</RelativeLayout>

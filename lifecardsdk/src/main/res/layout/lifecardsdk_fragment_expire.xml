@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvExpireCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/lifecardsdk_grey_five"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/lifecardsdk_bg_circle_orange"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/lifecardsdk_dp_80"
+                android:layout_height="@dimen/lifecardsdk_dp_80"
+                android:layout_gravity="center"
+                android:src="@drawable/lifecardsdk_ic_search_white" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lifecardsdk_dp_30"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+            android:layout_marginRight="@dimen/lifecardsdk_dp_30"
+            android:gravity="center"
+            android:text="Không có Thẻ trả trước nào.
+Bạn thử tắt điều kiện lọc và tìm lại !" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_10"
+            android:background="@color/lifecardsdk_orange"
+            android:padding="@dimen/lifecardsdk_dp_10"
+            android:text="Xóa bộ lọc"
+            android:textColor="@color/lifecardsdk_white" />
+
+    </LinearLayout>
+
+</LinearLayout>

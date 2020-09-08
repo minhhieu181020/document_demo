@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/lifecardsdk_dp_8"
+    android:paddingRight="@dimen/lifecardsdk_dp_8"
+    android:paddingBottom="@dimen/_10_sdp">
+
+    <View
+        android:layout_width="@dimen/lifecardsdk_dp_60"
+        android:layout_height="@dimen/lifecardsdk_dp_4"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:background="@drawable/lifecardsdk_bg_round_gray" />
+
+    <TextView
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+        android:gravity="center"
+        android:text="@string/lifecardsdk_card_select_Time" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lifecardsdk_dp_0_7"
+        android:layout_margin="@dimen/lifecardsdk_dp_12"
+        android:background="@color/lifecardsdk_gray2" />
+
+    <!--    5 giao dich gan nhat-->
+    <LinearLayout
+        android:id="@+id/ll5transaction"
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_6_sdp"
+        android:layout_marginRight="@dimen/_6_sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_6_sdp"
+        android:paddingRight="@dimen/_6_sdp"
+        android:paddingBottom="@dimen/_6_sdp">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="@string/lifecardsdk_card_Last_5_transactions" />
+
+        <ImageView
+            android:id="@+id/img5transaction"
+            android:layout_width="@dimen/lifecardsdk_dp_24"
+            android:layout_height="@dimen/lifecardsdk_dp_24"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/lifecardsdk_ic_icon_check_1"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!--    10 giao dich gan nhat-->
+    <LinearLayout
+        android:id="@+id/ll10transaction"
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_6"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_6"
+        android:gravity="center"
+        android:padding="@dimen/lifecardsdk_dp_6">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="@string/lifecardsdk_card_Last_10_transactions" />
+
+        <ImageView
+            android:id="@+id/img10transaction"
+            android:layout_width="@dimen/lifecardsdk_dp_24"
+            android:layout_height="@dimen/lifecardsdk_dp_24"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/lifecardsdk_ic_icon_check_1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--    Trong tuàn này-->
+    <LinearLayout
+        android:id="@+id/llthisweek"
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_6"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_6"
+        android:gravity="center"
+        android:padding="@dimen/lifecardsdk_dp_6">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:text="@string/lifecardsdk_card_Last_1_week_transactions" />
+
+        <ImageView
+            android:id="@+id/imgthisweek"
+            android:layout_width="@dimen/lifecardsdk_dp_24"
+            android:layout_height="@dimen/lifecardsdk_dp_24"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/lifecardsdk_ic_icon_check_1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--    Trong tháng này-->
+    <LinearLayout
+        android:id="@+id/llthismonth"
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_6"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_6"
+        android:gravity="center"
+        android:padding="@dimen/lifecardsdk_dp_6">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:text="@string/lifecardsdk_card_Last_1_month_transactions" />
+
+        <ImageView
+            android:id="@+id/imgthismonth"
+            android:layout_width="@dimen/lifecardsdk_dp_24"
+            android:layout_height="@dimen/lifecardsdk_dp_24"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/lifecardsdk_ic_icon_check_1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--    Chọn thời gian-->
+    <LinearLayout
+        android:id="@+id/llselecttime"
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/lifecardsdk_dp_6"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_6"
+        android:gravity="center"
+        android:padding="@dimen/lifecardsdk_dp_6">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderText"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:text="@string/lifecardsdk_card_Last_time_transactions" />
+
+        <ImageView
+            android:id="@+id/imgSelectTime"
+            android:layout_width="@dimen/lifecardsdk_dp_24"
+            android:layout_height="@dimen/lifecardsdk_dp_24"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/lifecardsdk_ic_icon_check_1"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

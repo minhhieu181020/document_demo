@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_5"
+        android:orientation="horizontal"
+        android:padding="@dimen/lifecardsdk_dp_10">
+        <!--imgbrandlogo-->
+        <LinearLayout
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/imgbrandlogo"
+                android:layout_width="@dimen/lifecardsdk_dp_40"
+                android:layout_height="@dimen/lifecardsdk_dp_40"
+                android:src="@mipmap/lifecardsdk_logo" />
+
+            <TextView
+                android:id="@+id/tvNameBrand"
+                style="@style/LifeCardSDK_HeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_10"
+                android:text="Highlands coffee" />
+        </LinearLayout>
+        <!--tvNameBrand-->
+        <LinearLayout
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Xem\n Nhà cung cấp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_8"
+        android:background="@drawable/lifecardsdk_bg_rounded_boder_solid"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lifecardsdk_dp_8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/lifecardsdk_dp_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:orientation="vertical">
+                <!--tvNamePackage-->
+                <TextView
+                    android:id="@+id/tvNamePackage"
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sử dụng dịch vụ đồ uống" />
+                <!--Trạng thái-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="Trạng thái"
+                    android:textColor="@color/lifecardsdk_orange" />
+                <!--tvStatusPackage-->
+                <TextView
+                    android:id="@+id/tvStatusPackage"
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="Còn hiệu lực" />
+
+                <!--hạn mức được cấp-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="Hạn mức đã cấp"
+                    android:textColor="@color/lifecardsdk_orange" />
+                <!--tvCreditLimitGranted-->
+                <TextView
+                    android:id="@+id/tvCreditLimitGranted"
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="1.000.000 VNĐ" />
+
+                <!--hạn mức còn lại-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="Hạn mức còn lại"
+                    android:textColor="@color/lifecardsdk_orange" />
+                <!--tvCreditLimitRemaining-->
+                <TextView
+                    android:id="@+id/tvCreditLimitRemaining"
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="500.000 VNĐ" />
+
+                <!--hạn sử dụng-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="Hạn sử dụng"
+                    android:textColor="@color/lifecardsdk_orange" />
+                <!--tvCredEXP-->
+                <TextView
+                    android:id="@+id/tvCredEXP"
+                    style="@style/LifeCardSDK_HeaderTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lifecardsdk_white"
+                    android:text="01/02/2019 - 30/04/2019" />
+            </LinearLayout>
+            <!--QR code-->
+            <LinearLayout
+                android:layout_width="@dimen/lifecardsdk_dp_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgQRcode"
+                    android:layout_width="@dimen/lifecardsdk_dp_80"
+                    android:layout_height="@dimen/lifecardsdk_dp_80"
+                    android:src="@mipmap/qrcode" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Xem chi tiết >" />
+    </LinearLayout>
+    <!--2 hàng-->
+    <LinearLayout
+        android:id="@+id/case1_2row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_5"
+        android:background="@color/lifecardsdk_gray"
+        android:orientation="horizontal"
+        android:padding="@dimen/lifecardsdk_dp_10"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Thời gian" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Hạn mức còn lại" />
+    </LinearLayout>
+    <!--3 hàng-->
+    <LinearLayout
+        android:id="@+id/case2_3row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_5"
+        android:background="@color/lifecardsdk_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/lifecardsdk_dp_10"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Thời gian" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Số tiền" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Hạn mức còn lại" />
+    </LinearLayout>
+    <!--3 hàng-->
+    <LinearLayout
+        android:id="@+id/case3_4row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_5"
+        android:background="@color/lifecardsdk_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/lifecardsdk_dp_10"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Thời gian" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Số tiền" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Số lần" />
+
+        <TextView
+            style="@style/LifeCardSDK_HeaderTextBold"
+            android:layout_width="@dimen/lifecardsdk_dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Hạn mức còn lại" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lifecardsdk_dp_8" />
+
+    <TextView
+        android:id="@+id/tvMoreHistory"
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@drawable/lifecardsdk_ic_expand_more_black_16"
+        android:paddingTop="@dimen/lifecardsdk_dp_12"
+        android:paddingBottom="@dimen/lifecardsdk_dp_12"
+        android:text="@string/lifecardsdk_filter_expand_more" />
+
+    <TextView
+        android:id="@+id/tvLessMoreHistory"
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@drawable/lifecardsdk_ic_expand_less__black_16"
+        android:paddingTop="@dimen/lifecardsdk_dp_12"
+        android:paddingBottom="@dimen/lifecardsdk_dp_12"
+        android:text="@string/lifecardsdk_filter_expand_less"
+        android:visibility="gone" />
+</LinearLayout>

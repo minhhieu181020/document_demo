@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LifeCardSDK_SquareMenuItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+    android:layout_marginTop="@dimen/lifecardsdk_dp_1"
+    android:layout_marginRight="@dimen/lifecardsdk_dp_8"
+    android:layout_marginBottom="@dimen/lifecardsdk_dp_7"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/lifecardsdk_dp_8"
+    app:cardElevation="@dimen/lifecardsdk_dp_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lifecardsdk_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lifecardsdk_dp_150"
+            android:src="@mipmap/lifecardsdk_background" />
+
+        <LinearLayout
+            android:id="@+id/rcImgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/lifecardsdk_dp_60"
+            android:layout_marginLeft="@dimen/lifecardsdk_dp_16"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_100">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvLogoCard"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/lifecardsdk_dp_60" />
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgLogo"-->
+        <!--            android:layout_width="@dimen/lifecardsdk_dp_60"-->
+        <!--            android:layout_height="@dimen/lifecardsdk_dp_60"-->
+        <!--            android:layout_marginLeft="@dimen/lifecardsdk_dp_16"-->
+        <!--            android:layout_marginTop="@dimen/lifecardsdk_dp_100"-->
+        <!--            android:src="@mipmap/lifecardsdk_logo" />-->
+
+        <LinearLayout
+            android:id="@+id/llCardInfor"
+            style="@style/LifeCardSDK_MarginHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rcImgLogo"
+            android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+            android:layout_marginBottom="@dimen/lifecardsdk_dp_12"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCardName"
+                    style="@style/LifeCardSDK_NormalTextBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sử dụng dịch vụ đồ uống" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/lifecardsdk_dp_6"
+                    android:layout_marginBottom="@dimen/lifecardsdk_dp_6"
+                    android:background="@drawable/lifecardsdk__bg_rounded_gray"
+                    android:padding="@dimen/lifecardsdk_dp_2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mã sản phẩm: " />
+
+                    <TextView
+                        android:id="@+id/tvCodeProduct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456789" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvPriceNew"
+                        style="@style/LifeCardSDK_NormalTextBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.000.0000 Đ"
+                        android:textColor="@color/lifecardsdk_orange" />
+
+                    <TextView
+                        android:id="@+id/tvPriceOrigin"
+                        style="@style/LifeCardSDK_NormalText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                        android:text="3.000.0000 Đ"
+                        android:textColor="@color/lifecardsdk_grey_seven"
+                        android:textSize="@dimen/lifecardsdk_sp_12" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    style="@style/LifeCardSDK_NormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Tặng kèm 01 bộ ly uống trà mang thương
+hiệu Higlands Coffee trị giá 200.000 đ" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCarDetail"
+                style="@style/LifeCardSDK_Button_Big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                android:background="@drawable/lifecardsdk_round_button_orange"
+                android:text="@string/lifecardsdk_buy_card"
+                android:textColor="@color/lifecardsdk_white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

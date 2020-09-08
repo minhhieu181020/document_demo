@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/LifeCardSDK_SquareMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+        android:layout_marginBottom="@dimen/lifecardsdk_dp_8"
+        android:layout_marginRight="@dimen/lifecardsdk_dp_4"
+        app:cardCornerRadius="@dimen/lifecardsdk_dp_8"
+        app:cardElevation="@dimen/lifecardsdk_dp_2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lifecardsdk_white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/lifecardsdk_dp_4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170_sdp">
+
+                <ImageView
+                    android:id="@+id/imgBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_170_sdp" />
+
+                <LinearLayout
+                    android:id="@+id/llPromotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/lifecardsdk_dp_4"
+                    android:background="@mipmap/lifecardsdk_background_promotion"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lifecardsdk_dp_4"
+                        android:layout_marginRight="@dimen/lifecardsdk_dp_4"
+                        android:rotation="-5"
+                        android:text="@string/lifecardsdk_buy_card_saving_"
+                        android:textColor="@color/lifecardsdk_white"
+                        android:textSize="@dimen/lifecardsdk_sp_12"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvPromotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lifecardsdk_dp_3"
+                        android:layout_marginRight="@dimen/lifecardsdk_dp_3"
+                        android:layout_marginBottom="@dimen/lifecardsdk_dp_3"
+                        android:rotation="-5"
+                        android:textColor="@color/lifecardsdk_white"
+                        android:textSize="@dimen/lifecardsdk_sp_13"
+                        android:textStyle="italic|bold" />
+                </LinearLayout>
+            </RelativeLayout>
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nsvLogo"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                android:layout_marginTop="@dimen/_129_sdp"
+                android:layout_marginBottom="@dimen/lifecardsdk_dp_6"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_54_sdp">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvLogo"
+                    android:layout_width="@dimen/lifecardsdk_dp_170"
+                    android:layout_height="@dimen/lifecardsdk_dp_70" />
+            </android.support.v4.widget.NestedScrollView>
+            <TextView
+                android:id="@+id/tvCardName"
+                style="@style/LifeCardSDK_Text_18_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nsvLogo"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_12" />
+
+            <LinearLayout
+                android:id="@+id/llCardInfor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCardName"
+                android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                android:layout_marginRight="@dimen/lifecardsdk_dp_12"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/lifecardsdk_dp_4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/lifecardsdk_dp_4"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvPriceNew"
+                            style="@style/LifeCardSDK_Text_18_Bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lifecardsdk_orange" />
+
+                        <TextView
+                            android:id="@+id/tvPriceOrigin"
+                            style="@style/LifeCardSDK_NormalText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/lifecardsdk_dp_12"
+                            android:textColor="@color/lifecardsdk_grey_seven"
+                            android:textSize="@dimen/lifecardsdk_sp_13" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/lifecardsdk_dp_4"
+                        android:layout_marginBottom="@dimen/lifecardsdk_dp_4"
+                        android:background="@drawable/lifecardsdk_bg_round_gray2"
+                        android:paddingLeft="@dimen/lifecardsdk_dp_6"
+                        android:paddingTop="@dimen/lifecardsdk_dp_2"
+                        android:paddingRight="@dimen/lifecardsdk_dp_6"
+                        android:paddingBottom="@dimen/lifecardsdk_dp_2"
+                        android:textColor="@color/lifecardsdk_defaut_gray"
+                        android:textSize="@dimen/lifecardsdk_sp_14"
+                        android:textStyle="italic" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvPromotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvExpandMore"
+                        style="@style/LifeCardSDK_NormalText_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/lifecardsdk_dp_20"
+                        android:layout_marginBottom="@dimen/lifecardsdk_dp_4"
+                        android:textColor="@color/lifecardsdk_gray1"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnBuyCard"
+                    style="@style/LifeCardSDK_Button_Big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/lifecardsdk_dp_8"
+                    android:background="@drawable/lifecardsdk_round_button_orange"
+                    android:text="@string/lifecardsdk_common_buy_card"
+                    android:textColor="@color/lifecardsdk_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

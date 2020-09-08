@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/lifecardsdk_dp_300"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/lifecardsdk_dp_16"
+    android:paddingRight="@dimen/lifecardsdk_dp_16">
+
+    <View
+        android:layout_width="@dimen/lifecardsdk_dp_60"
+        android:layout_height="@dimen/lifecardsdk_dp_4"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12"
+        android:background="@drawable/lifecardsdk_bg_round_gray" />
+
+    <TextView
+        style="@style/LifeCardSDK_HeaderTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_18"
+        android:text="@string/lifecardsdk_buy_card_terms_and_condition" />
+
+    <TextView
+        android:paddingBottom="@dimen/lifecardsdk_dp_50"
+        android:id="@+id/tvTerms"
+        style="@style/LifeCardSDK_NormalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lifecardsdk_dp_12" />
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/llContent"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/lifecardsdk_layout_toolbar_black" />
+
+        <RelativeLayout
+            android:id="@+id/rl_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lifecardsdk_black"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/camera_container_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipChildren="false">
+
+                <com.lpb.lifecardsdk.widget.facedetector.CameraView
+                    android:id="@+id/camera_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignStart="@+id/camera_mask_bg"
+                    android:layout_alignTop="@+id/camera_mask_bg"
+                    android:layout_alignEnd="@+id/camera_mask_bg"
+                    android:layout_alignBottom="@+id/camera_mask_bg" />
+
+                <ImageView
+                    android:id="@+id/camera_mask_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30_sdp"
+                    android:layout_marginTop="@dimen/_10_sdp"
+                    android:layout_marginRight="@dimen/_30_sdp"
+                    android:layout_marginBottom="@dimen/_10_sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/lifecardsdk_bg_camera_mask"
+                    tools:ignore="ContentDescription" />
+
+                <com.lpb.lifecardsdk.widget.facedetector.CircleProgressBar
+                    android:id="@+id/liveness_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignStart="@+id/camera_mask_bg"
+                    android:layout_alignTop="@+id/camera_mask_bg"
+                    android:layout_alignEnd="@+id/camera_mask_bg"
+                    android:layout_alignBottom="@+id/camera_mask_bg"
+                    android:layout_margin="@dimen/_1_sdp"
+                    android:clipChildren="false"
+                    app:bar_line_width="@dimen/_10_sdp"
+                    app:progress_background_color="@color/lifecardsdk_white"
+                    app:progress_end_color="@color/lifecardsdk_orange"
+                    app:progress_start_color="@color/lifecardsdk_orange"
+                    app:progress_stroke_width="@dimen/_1_sdp"
+                    app:style="line" />
+
+                <ImageView
+                    android:id="@+id/camera_mask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/lifecardsdk_bg_face_border_blue"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_cooldown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#50c0c0c0"
+                    android:textSize="@dimen/_100_sdp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/liveness_layout_bottom_tips_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/camera_container_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10_sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/liveness_layout_promptText"
+                    style="@style/LifeCardSDKTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="@string/lifecardsdk_face_authen_description"
+                    android:textColor="@color/lifecardsdk_white" />
+
+                <ImageView
+                    android:id="@+id/camera_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20_sdp"
+                    android:layout_marginBottom="@dimen/_20_sdp"
+                    android:src="@mipmap/lifecardsdk_ic_ocr_capture"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/liveness_layout_gesture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/camera_container_view"
+                android:layout_marginTop="@dimen/_20_sdp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_step_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/lifecardsdk_white"
+                    android:textSize="@dimen/_12_sdp" />
+
+                <LinearLayout
+                    android:id="@+id/liveness_content_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_step_instruction"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10_sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_liveness_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/liveness_content_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5_sdp"
+                    android:gravity="center"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/_12_sdp" />
+
+                <ImageView
+                    android:id="@+id/iv_selected"
+                    android:layout_width="@dimen/_50_sdp"
+                    android:layout_height="@dimen/_50_sdp"
+                    android:layout_below="@+id/tv_step_instruction"
+                    android:layout_marginStart="@dimen/_4_sdp"
+                    android:layout_marginTop="@dimen/_10_sdp"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/lifecardsdk_ic_focus" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlOpenCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:background="@color/lifecardsdk_white"
+            android:layout_height="@dimen/lifecardsdk_dp_51"
+            android:elevation="@dimen/lifecardsdk_dp_4"
+            android:layout_marginBottom="@dimen/lifecardsdk_dp_1">
+
+            <ImageView
+                android:id="@+id/imgBack2"
+                style="@style/LifeCardSDK_IconToolbar"
+                android:layout_centerVertical="true"
+                android:src="@drawable/lifecardsdk__ic_back_black" />
+
+            <TextView
+                android:id="@+id/tvTitleToolbar2"
+                style="@style/LifeCardSDK_HeaderTextBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/lifecardsdk_dp_18" />
+        </RelativeLayout>
+        <LinearLayout
+            android:paddingLeft="@dimen/lifecardsdk_dp_36"
+            android:paddingRight="@dimen/lifecardsdk_dp_36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/lifecardsdk_dp_120"
+                android:layout_height="@dimen/lifecardsdk_dp_120"
+                android:src="@mipmap/lifecardsdk_icon_iconmayanh" />
+
+            <TextView
+
+                style="@style/LifeCardSDK_HeaderTextBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                android:gravity="center"
+                android:text="@string/lifecardsdk_ocr_grant_camera_descw"
+                android:textSize="@dimen/lifecardsdk_sp_20" />
+
+
+            <Button
+                android:layout_marginTop="@dimen/lifecardsdk_dp_8"
+                android:id="@+id/btnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lifecardsdk_bg_rounded_orange1"
+                android:padding="@dimen/lifecardsdk_dp_10"
+                android:text="@string/lifecardsdk_settings"
+                android:textColor="@color/lifecardsdk_white"
+                android:textSize="@dimen/lifecardsdk_dp_16" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
